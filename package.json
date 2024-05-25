@@ -1,0 +1,21 @@
+{
+  "name": "latihan",
+  "version": "1.0.0",
+  "main": "script.js",
+  "format": "prettier --write .",
+  "scripts": {
+    "dev": " npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body id="beranda">
+
+    <!-- navbar start --> 
+    <div id="home"  class="w-full container flex absolute py-4 px-4">
+      <div class="font-bold text-2xl w-8/12">
+        <span
+          class="text-xl  bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text"
+        >
+          <a href="#beranda">Edu Juanda Pratama</a>
+        </span>
+      </div>
+
+      <div>
+        <nav
+          id="nav-menu"
+          class="hidden md:flex md:rounded-none md:top-auto md:max-w-full md:static md:shadow-none md:justify-between absolute rounded-md shadow-md top-full w-full right-0 max-w-[200px]"
+        >
+          <ul class="block md:flex">
+            <li class="group w-full p-2 md:mx-3">
+              <a
+                href="#beranda"
+                class="bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text hover-underline font-semibold "
+              >Home</a>
+            </li>
+            <li class="group w-full p-2 md:mx-3">
+              <a
+                href="#about"
+                class="bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text hover-underline font-semibold "
+              >About</a>
+            </li>
+            <li class="group w-full p-2 md:mx-3">
+              <a
+                href="#portfolio"
+                class="bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text hover-underline font-semibold "
+              >Portfolio</a>
+            </li>
+            <li class="group w-full p-2 md:mx-3">
+              <a
+                href="#portfolio"
+                class="bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text hover-underline font-semibold "
+              >Clients</a>
+            </li>
+            <li class="group w-full p-2 md:mx-3">
+              <a
+                href="#contact"
+                class="bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text hover-underline font-semibold "
+              >Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex md:hidden items-center px-4 ">
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="block absolute right-4"
+        >
+          <span
+            class="w-[30px] h-[2px] my-2 block bg-gradient-to-t from-[#06beb6] to-[#48b1bf] transition duration-300 ease-in-out origin-top-left"
+          ></span>
+          <span
+            class="w-[30px] h-[2px] my-2 block bg-gradient-to-t from-[#06beb6] to-[#48b1bf] transition duration-300 ease-in-out"
+          ></span>
+          <span
+            class="w-[30px] h-[2px] my-2 block bg-gradient-to-t from-[#06beb6] to-[#48b1bf] transition duration-300 ease-in-out origin-bottom-left"
+          ></span>
+        </button>
+      </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <div class="flex flex-wrap pt-28 w-full md:mx-auto container px-4 md:px-10 md:pt-44">
+      <div class="md:w-1/2 w-full px-4 md:pt-24 animate__animated animate__backInLeft" >
+        <p ><span class="font-semibold text-xl bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text md:text-4xl">Selamat Datang</span></p>
+        <p class="text-slate-600 font-semibold mt-2 md:text-xl">Halo! Saya <span class="bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text md:text-xl">Edu Juanda Pratama</span>, seorang Front End Developer. Saya menciptakan pengalaman web yang menarik dan interaktif dengan fokus pada desain yang fungsional dan estetis.</p>
+        <div class="flex pb-10">
+          <button id="button" class="bg-gradient-to-t from-[#06beb6] to-[#48b1bf] tracking-widest text-white font-semibold px-4 py-2 rounded-full mt-4 hover:opacity-90 hover:text-black shadow-xl">Hire Me</button>
+          <img id="button-img" src="/img/arrow.svg" alt="arrow" class="w-10 pt-2 mx-10 hidden">
+          <div id="button-p" class="hidden px-2 pt-6">
+            <p class="self-end text-black tracking-widest">WhatsApps</p>
+            <p  class="tracking-widest bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">085366195381</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative md:w-1/2 mx-auto w-full px-4 animate__animated animate__backInRight">
+        <img src="/img/profile.jpg" alt="profile"  class="max-w-full mx-auto md:w-[300px]">
+        <span class="absolute top-0 -z-50 -translate-x-1/2 md:right-14 animate-random">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="400" height="300">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" style="stop-color:#06beb6;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#48b1bf;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#gradient)" d="M43,-79.4C52.9,-68.8,56.2,-51.6,59.5,-37.2C62.9,-22.9,66.4,-11.4,65.4,-0.6C64.4,10.3,58.9,20.6,53,30.5C47.1,40.5,40.8,50.1,31.9,57.2C23,64.3,11.5,69,-1.7,72C-15,75,-29.9,76.4,-41.5,70.8C-53,65.2,-61.2,52.6,-69.2,39.6C-77.3,26.7,-85.3,13.3,-82.2,1.8C-79.2,-9.8,-65.1,-19.6,-57.4,-33.3C-49.8,-46.9,-48.5,-64.4,-40,-75.8C-31.5,-87.1,-15.8,-92.4,0.4,-93.1C16.6,-93.8,33.1,-89.9,43,-79.4Z" transform="translate(100 100)" />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- about section start -->
+    <div id="about" class="mt-20 px-4 md:mt-20 flex flex-wrap md:justify-between md:px-10 md:py-24">
+      <div class="w-full md:w-3/5 md:pt-11 px-2 " >
+        <p class="py-2 font-semibold text-xl bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">Tentang Saya</p>
+        <p class="py-2 text-3xl texxt-black font-semibold">Pengalaman web yang tak terlupakan adalah yang paling mempesona</p>
+        <p class="py-2 text-slate-600 mt-2 font-semibold">
+          Tak ada yang lebih mempesona daripada sebuah pengalaman web yang tak terlupakan. Sebagai seorang Front-End Developer, saya membangun dunia digital yang menawan dengan kreativitas dan ketekunan, memastikan setiap klik memberikan kepuasan yang tak tertandingi
+        </p>
+
+      </div>
+      <div class="w-full md:w-2/6 px-2 md:py-10">
+        <div class="mt-2">
+            <p  class="font-semibold text-xl bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">Hubungi Saya</p>
+            <p class="font-semibold text-slate-600 md:py-3">Perlu bantuan dalam mengembangkan tampilan website yang menarik? Ayo diskusikan proyek Anda bersama saya sebagai Front-End Developer</p>
+            <div class="flex flex-wrap pt-5 justify-center">
+              <div class="border px-2 py-1 mx-2 rounded-full relative group">
+                <img src="/img/instagram.svg" alt="instagram" class="w-8 mt-2">
+                <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+                  <p class="text-sm text-gray-700">instagram</p>
+                </div>
+              </div>
+              <div class="border px-2 py-1 mx-2 rounded-full relative group">
+                <img src="/img/linkedin.svg" alt="linkedin" class="w-8 mt-2">
+                <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+                  <p class="text-sm text-gray-700">Linkedin</p>
+                </div>
+              </div>
+              <div class="border px-2 py-1 mx-2 rounded-full relative group">
+                <img src="/img/whatsapp.svg" alt="WhatsApps" class="w-8 mt-2">
+                <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+                  <p class="text-sm text-gray-700">WhatsApps</p>
+                </div>
+              </div>
+              <div class="border px-2 py-1 mx-2 rounded-full relative group md:hidden lg:flex">
+                <img src="/img/github.svg" alt="github.svg" class="w-8 mt-2">
+                <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+                  <p class="text-sm text-gray-700">Github</p>
+                </div>
+              </div>
+            </div>   
+        </div>
+      </div>
+    </div>
+    <!-- about section end -->
+
+    <!-- portfolio section start -->
+    <section id="portfolio" class="w-full bg-slate-200 mt-16 p-4 md:px-10 pt-16 ">
+      <div class="block text-center px-4 max-w-full">
+        <p class="bg-gradient-to-t font-semibold from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">Portfolio</p>
+        <p class="text-black text-xl font-bold">Project Terbaru</p>
+        <p class="text-slate-600 font-semibold md:mx-auto md:w-1/2">
+          Lihatlah hasil karya terbaru saya! Proyek-proyek ini memanfaatkan berbagai framework dan library terkemuka untuk memberikan solusi yang inovatif dan menarik.
+        </p>
+      </div>
+    </section>
+
+    <section class="flex flex-wrap text-center bg-slate-200 justify-evenly p-2 px-4 pb-16 overflow-hidden">
+      <div class="block md:w-2/5 pt-11 md:mx-5 justify-center w-full group rounded-b-xl">
+          <img src="/img/project1.png" alt="project1" class="w-full h-auto overflow-hidden" >
+          <p class="text-white font-semibold py-3 px-2 bg-gradient-to-r rounded-b-xl from-[#06beb6] to-[#48b1bf]">
+              <a href="https://yastar123.github.io/-Website-Pencarian-Berita-dengan-HTML-CSS-dan-Bootstrap/" target="_blank" class="group-hover:text-slate-700">
+                  Website ini adalah platform pencarian berita 
+              </a>
+          </p>
+      </div> 
+      <div class="block md:w-2/5 pt-11 md:mx-5 justify-center w-full group rounded-b-xl">
+          <img src="/img/project2.png" alt="project2" class="w-full h-auto overflow-hidden" >
+          <p class="text-white font-semibold py-3 px-2 bg-gradient-to-r rounded-b-xl from-[#06beb6] to-[#48b1bf]">
+              <a href="https://yastar123.github.io/game/" target="_blank" class="group-hover:text-slate-700">
+                Website ini menghadirkan permainan Suwit Jawa 
+              </a>
+          </p>
+      </div>
+      <div class="block md:w-2/5 pt-11 md:mx-5 justify-center w-full group rounded-b-xl">
+          <img src="/img/project3.png" alt="project3" class="w-full h-auto overflow-hidden" >
+          <p class="text-white font-semibold py-3 px-2 bg-gradient-to-r rounded-b-xl from-[#06beb6] to-[#48b1bf]">
+              <span class="group-hover:text-slate-700">
+                Website ini memenampilkan halaman produk bantal dengan desain estetis 
+              </span>
+          </p>
+      </div>
+      <div class="block md:w-2/5 pt-11 md:mx-5 justify-center w-full group rounded-b-xl">
+          <img src="/img/project4.png" alt="project4" class="w-full h-auto overflow-hidden" >
+          <p class="text-white font-semibold py-3 px-2 bg-gradient-to-r rounded-b-xl from-[#06beb6] to-[#48b1bf]">
+              <a href="https://aplikasi-pengelolah-data-buku.vercel.app/" target="_blank" class="group-hover:text-slate-700">
+                aplikasi manajemen data buku berbasis React.js dan Vite  
+              </a>
+          </p>
+      </div>
+      <div class="block md:w-2/5 pt-11 md:mx-5 justify-center w-full group rounded-b-xl">
+          <img src="/img/project5.png" alt="project5" class="w-full h-auto overflow-hidden" >
+          <p class="text-white font-semibold py-3 px-2 bg-gradient-to-r rounded-b-xl from-[#06beb6] to-[#48b1bf]">
+              <a href=" https://yastar123.github.io/toko-online/" target="_blank" class="group-hover:text-slate-700">
+                Ini Adalah Website  Online (Setengah Jadi)!
+              </a>
+          </p>
+      </div>    
+  </section>
+    <!-- portfolio section end -->
+
+    <!-- clients section start -->
+    <section id="clients" class="bg-slate-500 w-full p-4 text-center py-16">
+      <div class="md:w-1/2 mx-auto">
+        <p class="md:text-xl text-md font-semibold bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">Clients</p>
+        <p class="md:text-2xl font-bold text-xl text-white">Yang Pernah Bekerjasama</p>
+        <p class="text-slate-400">
+          Selama bertahun-tahun, kami telah membangun kemitraan yang kuat dengan berbagai perusahaan terkemuka dari industri yang beragam, yang semuanya terkenal dengan inovasi dan kepemimpinan pasar mereka
+        </p>
+      </div>
+      <div class="flex flex-wrap pt-10 justify-center pb-6">
+        <div class="border px-2 py-1 mx-2 rounded-full relative group">
+          <img src="/img/tokopedia.svg" alt="tokopedia" class="w-8 mt-2">
+          <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+            <p class="text-sm text-gray-700">Tokopedia</p>
+          </div>
+        </div>
+        <div class="border px-2 py-1 mx-2 rounded-full relative group">
+          <img src="/img/google.svg" alt="google" class="w-8 mt-2">
+          <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+            <p class="text-sm text-gray-700">Google</p>
+          </div>
+        </div>
+        <div class="border px-2 py-1 mx-2 rounded-full relative group">
+          <img src="/img/joke.svg" alt="joke" class="w-8 mt-2">
+          <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+            <p class="text-sm text-gray-700">For clients, it's just a joke, don't sue me 😅</p>
+          </div>
+        </div>
+        <div class="border px-2 py-1 mx-2 rounded-full relative group">
+          <img src="/img/microsoft.svg" alt="microsoft" class="w-8 mt-2">
+          <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+            <p class="text-sm text-gray-700">Microsoft</p>
+          </div>
+        </div>
+        <div class="border px-2 py-1 mx-2 rounded-full relative group">
+          <img src="/img/meta.svg" alt="meta" class="w-8 mt-2">
+          <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+            <p class="text-sm text-gray-700">Meta</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- clients section end -->
+
+    <!-- section contact start -->
+    <div id="contact" class="block justify-center mt-10 px-4 md:p-0">
+      <div class="text-center md:w-1/2 mx-auto">
+        <p class="text-lg font-semibold bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">
+          Contact
+        </p>
+        <p class="text-2xl font-bold">
+          Hubungi Kami
+        </p>
+        <p class="text-slate-600 font-semibold">
+          Jika Anda memiliki minat lebih lanjut atau pertanyaan tambahan, jangan ragu untuk menghubungi kami. Kami akan dengan senang hati memberikan informasi yang Anda butuhkan.
+        </p>
+      </div>
+      <form action="" class="mt-10">
+        <div class="w-full p-8 rounded-lg shadow-lg">
+          <form action="#" method="POST">
+            <div class="mb-4">
+              <label for="name" class="text-lg font-semibold bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="text-lg font-semibold bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div class="mb-4">
+              <label for="message" class="text-lg font-semibold bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Your message" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="font-semibold w-full bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-white p-3 rounded-md shadow hover:opacity-80 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Send Message</button>
+            </div>
+      </form>
+    </div>
+    <!-- section contact end -->
+
+    <!-- footer start -->
+  <div class="w-full bg-gray-800 text-gray-100 mt-20 justify-center flex py-10 md:p-0">
+    <div class=" md:mt-40 w-full md:w-9/12 px-4 md:grid md:grid-cols-3 md:gap-x-3 md:pb-10">
+      <div class=" w-1/2 block">
+        <p class=" font-semibold text-xl bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">
+          Hubungi Saya
+        </p>
+        <p class=" py-1">
+          eduj2164@gmail.com
+        </p>
+        <p class="text-xs text-slate-400">
+          J8R9+8JJ, Sabah Balau, Kec. Tj. Bintang, Kabupaten Lampung Selatan, Lampung 35365
+        </p>
+      </div>
+      <div class="flex flex-col pt-10 md:p-0 md:text-xl">
+        <p class="text-xl font-semibold bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">Navigasi</p>
+        <a href="#" class=" text-slate-400 text-base hover:text-white">Home</a>
+        <a href="#" class=" text-slate-400 text-base hover:text-white">About</a>
+        <a href="#" class=" text-slate-400 text-base hover:text-white">portfolio</a>
+        <a href="#" class=" text-slate-400 text-base hover:text-white">Contact</a>
+      </div>
+      <div class="hidden md:block">
+        <p class=" text-center md:p-0 pt-10 text-xl font-semibold bg-gradient-to-t from-[#06beb6] to-[#48b1bf] text-transparent bg-clip-text">My Skills</p>
+        <div class="flex flex-wrap pt-5 justify-center">
+          <div class="border px-2 py-1 mx-2 rounded-full relative group">
+            <img src="/img/html.svg" alt="html" class="w-6 mt-2">
+            <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+              <p class="text-sm text-gray-700">Html</p>
+            </div>
+          </div>
+          <div class="border px-2 py-1 mx-2 rounded-full relative group">
+            <img src="/img/css.svg" alt="css" class="w-6 mt-2">
+            <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+              <p class="text-sm text-gray-700">CSS</p>
+            </div>
+          </div>
+          <div class="border px-2 py-1 mx-2 rounded-full relative group">
+            <img src="/img/javascript.svg" alt="javascript" class="w-6 mt-2">
+            <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+              <p class="text-sm text-gray-700">Javascript</p>
+            </div>
+          </div>
+          <div class="border px-2 py-1 mx-2 rounded-full relative group">
+            <img src="/img/react.svg" alt="react" class="w-6 mt-2">
+            <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+              <p class="text-sm text-gray-700">React</p>
+            </div>
+          </div>
+          <div class="border px-2 py-1 mx-2 rounded-full relative group">
+            <img src="/img/tailwindcss.svg" alt="tailwindcss" class="w-6 mt-2">
+            <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+              <p class="text-sm text-gray-700">tailwindcss</p>
+            </div>
+          </div>
+        </div>   
+        <div class="flex pt-12 md:py-14 justify-center ">
+          <div class="border px-2 py-1 mx-2 rounded-full relative group">
+            <img src="/img/bootstrap.svg" alt="bootstrap" class=" w-6 mt-2">
+            <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+              <p class="text-sm text-gray-700">Bootstrap</p>
+            </div>
+          </div>
+          <div class="border px-2 py-1 mx-2 rounded-full relative group">
+            <img src="/img/c++.svg" alt="c++" class="w-6 mt-2">
+            <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+              <p class="text-sm text-gray-700">C++</p>
+            </div>
+          </div>
+          <div class="border px-2 py-1 mx-2 rounded-full relative group">
+            <img src="/img/learning.svg" alt="learning.svg" class="w-6 mt-2">
+            <div class=" font-semibold text-md hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-max bg-gradient-to-t from-[#06beb6] to-[#48b1bf] border-gray-300 rounded-md shadow-md p-2">
+              <p class="text-sm text-gray-700">Wait I'm Learning New Things</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="bg-gray-800 text-center  text-gray-500 border-t-white border-t py-4 md:py-6 w-full">
+      &copy; 2024. Edu Juanda Pratama.
+    </div>
+  </div>
+    <!-- footer end -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
